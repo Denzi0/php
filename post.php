@@ -15,11 +15,14 @@
     $gender = $_POST["gender"];
     $schooldate = $_POST["school_years"];
     $guardian = $_POST["guardian"];
-    $coursename = $_POST["course"];
     $civilstatus = $_POST["civil"];
-
+    $coursename = $_POST["course"];
     $names = $fullname = $lastname;
 
+
+    if(validatecourses($coursename) == FALSE){
+        echo "NOT VALID COURSES " ."<br>" ;
+    }
 
     if(validateAddress($address) == FALSE){
         echo "NOT VALID ADDRESS " ."<br>" ;
@@ -55,6 +58,7 @@
     if(validate($names) == FALSE){
         echo "INVALID NAMES" ."<br>";
     }
+    
     if(validatecivil($civilstatus) == FALSE){
         echo "NOT VALID CIVIL STATUS" ."<br>";
     }
@@ -62,7 +66,7 @@
 
 
 //
-    if(validatemiddle($middlename) && validatecivil($civilstatus) && validateguardian($guardian) && validateschoolfunc($schooldate) && validatedate($date) && validate($names) &&validateAddress($address)&&validateplace($place) && validatemobilenumber($mobilenum) && validatemail($email)== TRUE){
+    if(validatecourses($coursename)&&validatemiddle($middlename) && validatecivil($civilstatus) && validateguardian($guardian) && validateschoolfunc($schooldate) && validatedate($date) && validate($names) &&validateAddress($address)&&validateplace($place) && validatemobilenumber($mobilenum) && validatemail($email)== TRUE){
         include_once("success.php");
     }
 

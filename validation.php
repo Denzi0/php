@@ -32,9 +32,16 @@ function validatecivil($civilstatus){
 function validatemiddle($middlename){
     return middlename($middlename);
 }
-
+function validatecourses($coursename){
+    return courses($coursename);
+}
 
 //Matching of inputs
+function courses($coursename){
+    if(strlen($coursename) > 2){
+        return preg_match('/^[a-zA-Z_]+$/', $coursename);
+    }
+}
 function middlename($middlename){
     if(strlen($middlename) == 1){
         return preg_match('/^[a-zA-Z]+$/', $middlename);
@@ -42,7 +49,7 @@ function middlename($middlename){
 }
 function civilstat($civilstatus){
     if(strlen($civilstatus) > 2){
-        return preg_match('/^[a-zA-Z]+$/', $civilstatus);
+        return preg_match('/^[A-Za-z]+$/', $civilstatus);
     }
 }
 function guardianname($guardian){
@@ -59,7 +66,6 @@ function place($place){
     if(strlen($place) > 2   ){
         return preg_match("/[^a-zA-Z0-9_-]/", $place);
     }
-   
 }
 
 function isEmpty($names){
