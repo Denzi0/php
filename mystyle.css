@@ -1,0 +1,12 @@
+body {
+    background-color: #313131 !important;
+    color: #fff;
+}
+
+.formborder {
+    background-color: #414141 !important;
+    padding: 30px 30px;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
