@@ -21,7 +21,8 @@
                         <div class="col-sm-5">
                             <div class="form-group">
                                 <label for="Full Name">Full Name</label>
-                                <input type="text" class="form-control" id="Full_name" name="name" required>
+                                <input type="text" class="form-control" id="Full_name" name="name" required
+                                    placeholder="First Name">
                                 <small class="form-text">This should be your firstname</small>
                             </div>
                         </div>
@@ -29,7 +30,8 @@
                         <div class="col-sm-5">
                             <div class="form-group">
                                 <label for="Last Name">Last Name</label>
-                                <input type="text" class="form-control" id="Last_name" name="last" required>
+                                <input type="text" class="form-control" id="Last_name" name="last" required
+                                    placeholder="Last Name">
                                 <small class="form-text">This should be your lastname</small>
                             </div>
                         </div>
@@ -38,12 +40,14 @@
                                 <label for="Middle Name">MiddleName</label>
                                 <input type="text" class="form-control" id="Middle_name" name="middle" required>
                             </div>
+                            <small class="form-text">middel name</small>
                         </div>
 
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="Addresss">Address:</label>
-                                <input type="text" class="form-control" id="Address" name="add" required>
+                                <input type="text" class="form-control" id="Address" name="add" required
+                                    placeholder="Address">
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -72,8 +76,9 @@
 
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="Guardian">Guardian:</label>
-                                <input type="text" class="form-control" id="Guardian" name="guardian">
+                                <label for="Guardian">Guardian</label>
+                                <input type="text" class="form-control" id="Guardian" name="guardian"
+                                    placeholder="Guardian Name">
                             </div>
                             <div class="form-group">
                                 <label for="selectcourse">Courses:</label>
@@ -90,7 +95,7 @@
                             <div class="form-group">
                                 <label for="contact">Contact Number:</label>
                                 <input type="text" class="form-control" id="contact" name="contact" name="contact"
-                                    required>
+                                    required placeholder="+63">
                             </div>
 
                             <div class="form-group">
@@ -116,11 +121,12 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="Email">Email address:</label>
-                                <input type="email" class="form-control" id="email" name="mail" required>
+                                <input type="email" class="form-control" id="email" name="mail" required
+                                    placeholder="email@address.com">
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <button type="submit" class="btn form-control" color="black">Submit</button>
+                            <button type="submit" class="btn btn-sucess">Submit</button>
                         </div>
                     </div>
                 </form>

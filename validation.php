@@ -39,7 +39,7 @@ function validatecourses($coursename){
 //Matching of inputs
 function courses($coursename){
     if(strlen($coursename) > 2){
-        return preg_match('/^[a-zA-Z_]+$/', $coursename);
+        return preg_match('/^[a-zA-Z_ &]+$/', $coursename);
     }
 }
 function middlename($middlename){
@@ -54,7 +54,7 @@ function civilstat($civilstatus){
 }
 function guardianname($guardian){
     if(strlen($guardian) > 2){
-        return preg_match('/^[a-zA-Z]+$/', $guardian);
+        return preg_match('/^[a-zA-Z_.]+$/', $guardian);
     }
 }
 function Address($address){
