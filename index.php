@@ -68,6 +68,7 @@
                             <div class="form-group">
                                 <label for="selectcivil">Civil Status</label>
                                 <select class="form-control" id="civil" name="civil">
+                                    <option selected>Civil Status</option>
                                     <option value="Single">Single</option>
                                     <option value="Married">Married</option>
                                 </select>
@@ -83,6 +84,7 @@
                             <div class="form-group">
                                 <label for="selectcourse">Courses:</label>
                                 <select class="form-control" id="course" name="course">
+                                    <option selected>Courses</option>
                                     <option value="Information Technology">Information Technology</option>
                                     <option value="Civil Engineering">Civil Engineering</option>
                                     <option value="Architecture">Architecture</option>
