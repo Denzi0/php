@@ -1,15 +1,14 @@
 body {
-    color: #fff;
-    background-image: url(images/backgroundjpg.jpg) !important;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    color: #fff !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/backgroundjpg.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100vh !important;
 }
 
 .formborder {
-    background-color: #06292f !important;
-    padding: 30px 30px;
-    max-width: 700px;
-    margin: 20px auto;
-    border-radius: 10px;
+    padding: 30px 30px !important;
+    max-width: 700px !important;
+    margin: 20px auto !important;
+    border-radius: 10px !important;
 }
