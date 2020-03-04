@@ -26,9 +26,9 @@
             <div class="card-body">
                 <form action="fileupload.php" class="md-form" method="POST" enctype="multipart/form-data">
                     <div class="file-field">
-                        <div class="btn btn-danger btn-sm mt-3">
+                        <div class="file-upload-wrapper btn btn-danger btn-sm mt-3">
                             <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose files</span>
-                            <input type="file" name="file" multiple="">
+                            <input class="file-upload" class="id=" input-file-now"" type="file" name="file" multiple="">
                         </div>
                     </div>
                     <button class="btn btn-danger p-2 mt-3 mb-3 " type="submit" name="submit">
